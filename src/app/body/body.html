@@ -1,0 +1,62 @@
+<main>
+    <div>
+        <form class="Container">
+            <div class="Align-Container">
+                <h1>True Count:</h1>
+                <h1>Bet:</h1>
+            </div>
+            <div class="Align-Container">
+                <label for="T0">True Count 0:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T0" name="T0" >
+            </div>
+            <div class="Align-Container">
+                <label for="T1">True Count 1:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T1" name="T1">
+            </div>
+            <div class="Align-Container">
+                <label for="T2">True Count 2:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T2" name="T2">
+            </div>
+            <div class="Align-Container">
+                <label for="T3">True Count 3:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T3" name="T3">
+            </div>
+            <div class="Align-Container">
+                <label for="T4">True Count 4:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T4" name="T4">
+            </div>
+            <div class="Align-Container">
+                <label for="T5">True Count 5:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T5" name="T5">
+            </div>
+            <div class="Align-Container">
+                <label for="T6">True Count 6:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T6" name="T6">
+            </div>
+            <div class="Align-Container">
+                <label for="T7">True Count 7:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="T7" name="T7">
+            </div>
+
+
+            <div class="Align-Container">
+                <label for="HPH">Estimate:Hands Per Hour:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="HPH" name="HPH" value="200">
+            </div>
+            <div class="Align-Container">
+                <label for="HP">Hours played:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="HP" name="HP">
+            </div>
+            <div class="Align-Container">
+                <label for="BKR">Total Bank Roll:</label>
+                <input (input)="count()" class="input-EV-calc" type="number" id="BKR" name="BKR">
+            </div>
+        </form>
+    </div>
+    <div>
+        <output>Expected value per hour: {{EVPH | number:'1.2-2'}} €/hour</output><br>
+        <output>Total Expected value: {{TEV | number:'1.2-2'}} €/TEV</output><br>
+        <output>Risk of ruin(ROR): {{ROR | number:'1.2-2'}}%</output><br>
+        <output>Bankroll life in hours(Only for Negative EV): {{BKRL | number:'1.1-2'}}h</output>
+    </div>
+</main>
