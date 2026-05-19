@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1779205660944,
+  "timestamp": 1779207545820,
   "index": "/edge21-blackjack-suite/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,6 @@
         "ignoreVary": true
       },
       "urls": [
-        "/edge21-blackjack-suite/favicon.ico",
         "/edge21-blackjack-suite/index.html",
         "/edge21-blackjack-suite/main-JTSI5XMU.js",
         "/edge21-blackjack-suite/manifest.webmanifest",
@@ -27,30 +26,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "/edge21-blackjack-suite/icons/icon-128x128.png",
-        "/edge21-blackjack-suite/icons/icon-144x144.png",
-        "/edge21-blackjack-suite/icons/icon-152x152.png",
-        "/edge21-blackjack-suite/icons/icon-192x192.png",
-        "/edge21-blackjack-suite/icons/icon-384x384.png",
-        "/edge21-blackjack-suite/icons/icon-512x512.png",
-        "/edge21-blackjack-suite/icons/icon-72x72.png",
-        "/edge21-blackjack-suite/icons/icon-96x96.png"
+        "/edge21-blackjack-suite/icons/android-chrome-144x144.png",
+        "/edge21-blackjack-suite/icons/android-chrome-192x192.png",
+        "/edge21-blackjack-suite/icons/android-chrome-48x48.png",
+        "/edge21-blackjack-suite/icons/android-chrome-512x512.png",
+        "/edge21-blackjack-suite/icons/android-chrome-72x72.png",
+        "/edge21-blackjack-suite/icons/android-chrome-96x96.png",
+        "/edge21-blackjack-suite/icons/apple-splash-screen-1024x1024.png",
+        "/edge21-blackjack-suite/icons/apple-touch-icon-152x152.png",
+        "/edge21-blackjack-suite/icons/apple-touch-icon.png",
+        "/edge21-blackjack-suite/icons/favicon-16x16.png",
+        "/edge21-blackjack-suite/icons/favicon-32x32.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/edge21-blackjack-suite/favicon.ico": "f39abd363718f7c9a67282a37e558c268b916c91",
-    "/edge21-blackjack-suite/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
-    "/edge21-blackjack-suite/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
-    "/edge21-blackjack-suite/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
-    "/edge21-blackjack-suite/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
-    "/edge21-blackjack-suite/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
-    "/edge21-blackjack-suite/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
-    "/edge21-blackjack-suite/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
-    "/edge21-blackjack-suite/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/edge21-blackjack-suite/index.html": "ac18fb9c69eaa991e7d79ed4e7b4dc322a479f2f",
+    "/edge21-blackjack-suite/icons/android-chrome-144x144.png": "8c9b4c4aa2665ee78987da3d09c1612bee447d1a",
+    "/edge21-blackjack-suite/icons/android-chrome-192x192.png": "819cd3442a290f009998d1f319cfffe37faf6bfc",
+    "/edge21-blackjack-suite/icons/android-chrome-48x48.png": "16de59b7d0c6daf2b419b8c4605f47971beb245c",
+    "/edge21-blackjack-suite/icons/android-chrome-512x512.png": "19934f2fb024bf7e6d14e4d27f3aa09c21187987",
+    "/edge21-blackjack-suite/icons/android-chrome-72x72.png": "fc8b8d2dc1e42677c19cdc6ff18e03f15ba65431",
+    "/edge21-blackjack-suite/icons/android-chrome-96x96.png": "7cf1d74406e903b0ee7c7b76d50a9bf3ed42105b",
+    "/edge21-blackjack-suite/icons/apple-splash-screen-1024x1024.png": "2850e1d52f3b3d834810391b2de0c5fb32629ba1",
+    "/edge21-blackjack-suite/icons/apple-touch-icon-152x152.png": "e4147a6b965e6d8192ef5943593868a0360af02f",
+    "/edge21-blackjack-suite/icons/apple-touch-icon.png": "684300fc377b688cf2785fb367fe29c8d61e29b7",
+    "/edge21-blackjack-suite/icons/favicon-16x16.png": "af5988f7cd50a4ee588266ee537db5f9f9bede15",
+    "/edge21-blackjack-suite/icons/favicon-32x32.png": "facc87a1fa2b01f2414e6a529f2c2e0714762a84",
+    "/edge21-blackjack-suite/index.html": "48fbc155b270782995c61cfb42b020b3076241de",
     "/edge21-blackjack-suite/main-JTSI5XMU.js": "05877e29101465b54920f06475517152f0af158c",
     "/edge21-blackjack-suite/manifest.webmanifest": "a124399c456f135f47131f21f2324a0141e17a81",
     "/edge21-blackjack-suite/styles-JMSLWZAZ.css": "32102996b3a651c23a1cd0704372b5ad1a4012aa"
