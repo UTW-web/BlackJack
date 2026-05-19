@@ -53,6 +53,27 @@
                 <label for="BKR">Total Bank Roll:</label>
                 <input (input)="count()" class="input-EV-calc" type="number" id="BKR" name="BKR">
             </div>
+            <div class="Align-Container">
+                <label for="BKR">Deck Penetration(5%-30%):</label>
+                <input (input)="count()" class="input-EV-calc" min="5" max="30" type="number" id="DPEN" name="DPEN" value="10">
+            </div>
+            <div class="Align-Container">
+                <label for="NOD">Number of decks</label>
+                <select (change)="count()" class="input-EV-calc" id="NOD" name="NOD">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            <div class="Align-Container">
+                <label for="D17">Dealer S17 or H17</label>
+                <select (change)="count()" class="input-EV-calc" id="D17" name="D17">
+                    <option value="S17">S17</option>
+                    <option value="H17">H17</option>
+                </select>
+            </div>
         
 </form>
     </div>

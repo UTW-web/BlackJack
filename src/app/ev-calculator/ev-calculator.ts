@@ -44,15 +44,28 @@ count() {
   // variance per hand equation sum
   let VPH_EQ_SUM=0;
 
+  let D17_g =document.getElementById("D17") as HTMLSelectElement;
+  let NOD_g =document.getElementById("NOD") as HTMLSelectElement;
+  let DPEN_g = document.getElementById("DPEN") as HTMLInputElement;  
+  // number of decks
+  let NOD = Number(NOD_g.value) || 8;
+  // Decision 17
+  let D17 = Number(D17_g.value === "H17") ? 0.0002 : 0;
+  // Deck Penetration
+  let DPEN = Number(DPEN_g?.value) || 10;
+  // Deck penetration decimal
+  let DPEN_D = (DPEN / 100) * 0.001;
+  // table penalty
+  let tablePenalty = D17 + ((NOD - 1) * 0.00015) + DPEN_D;
   for (let i: number=0; i<=7; i++) {
     const InputElement = ArrayCount[i] as HTMLInputElement
     let bet:number=Number(InputElement?.value)|| 0;
-    let edge= Data[i].edge;
+    let edge= Data[i].edge - tablePenalty;
     let frequency= Data[i].frequency;
     let ev_equation=bet*edge*frequency;
     EV_EQ_SUM+=ev_equation;
 
-    let vph_equation= (bet*bet)*1.15*frequency;
+    let vph_equation= (bet * bet) * (1.15 + (NOD - 1) * 0.015) * frequency;
     VPH_EQ_SUM+=vph_equation;
   }
 
@@ -83,7 +96,7 @@ count() {
   if (this.EVPH<0 && BKR>0) {
     this.BKRL=BKR/Math.abs(this.EVPH);
   }
-
+console.log("VPH_EQ_SUM:", VPH_EQ_SUM, "NOD:", NOD);
 };
 
 

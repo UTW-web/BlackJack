@@ -2,14 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html, body {
-  overflow-x: hidden; /* Prepreči horizontalno skrolanje */
-  width: 100%;
+  color:#d1d8e0;
+/*
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  */
 }
 main {
-    background-color:brown;
     height: 100dvh;
+    background-color: #101820;
+}
+.Menu-Bts {
+    background-color: #2d5a5a;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius:0.2rem;
+    cursor:pointer;
+    padding: 0.8rem;
+    font-size:1.2rem;
+    height:3.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.Back {
+    background-color: #2d5a5a;
+    border-radius:0.2rem;
+    cursor:pointer;
+    padding:0.4rem;
+    font-size:1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.Back:hover,
+.Menu-Bts:hover {
+    background-color: #3a7575;
+    transform: translateY(-2px);
+}
+.Back:active,
+.Menu-Bts:active {
+    transform: translateY(0);
+    background-color: #244949;
 }
 .main-home {
     display:flex;
@@ -36,40 +68,15 @@ main {
     margin-top:auto;
     margin-bottom:auto;
 }
-.Menu-Bts {
-    background-color: rgb(230, 6, 6);
-    color: black;
-    border-radius:0.2rem;
-    cursor:pointer;
-    padding: 0.8rem;
-    font-size:1.2rem;
-    border:1px solid rgb(67, 17, 27);
-    height:3.5rem;
-
-}
 .Menu-Bts-Play {
     height:5rem;
 }
-.Back:hover,
-.Menu-Bts:hover {
-        background-color:rgb(197, 9, 9);
-}
 .Title {
-    color:black;
     font-size:3rem;
     padding-top:4rem;
 }
 .Subtitle {
     font-size:1rem;
-}
-.Back {
-    background-color: rgb(230, 6, 6);
-    border-radius:0.2rem;
-    cursor:pointer;
-    padding:0.4rem;
-    color:black;
-    font-size:1.2rem;
-    border:1px solid rgb(67, 17, 27);
 }
 footer {
     font-family:math;

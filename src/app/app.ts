@@ -10,6 +10,7 @@ import { BlackJackGame } from './black-jack-game/black-jack-game';
   imports: [EVCalculator, BlackJackGame],
   templateUrl: './app.html',
   styleUrl: './app.css'
+  
 })
 export class App implements OnInit {
   Active_screen = "main"

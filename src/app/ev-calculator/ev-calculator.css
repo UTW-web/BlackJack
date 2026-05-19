@@ -1,11 +1,11 @@
 main {
-    background-color:brown;
+    background-color:#101820;
+    color:#d1d8e0;
 }
 .input-EV-calc {
-    background-color:rgb(219, 35, 35);
-    color:black;
+    background-color:#1e2831;
     width:5rem;
-    border:1px solid rgb(67, 17, 27);
+    border: 3px solid rgba(255, 255, 255, 0.1);
 }
 .Container {
     display:flex;
@@ -29,6 +29,8 @@ main {
 }
 .Output-ev {
     border: 2px solid black;
+    margin-bottom:2rem;
+    font-size:1.1rem;
 }
 .Box {
     border:1px solid black;
