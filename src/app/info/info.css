@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:1rem;
+    background-color:#101820;
+    padding-bottom:2rem;
+}
+.Title {
+    font-size:3rem;
+    font-family:math;
+    font-weight:700;
+    margin-bottom: 2rem;
+}
+.built {
+    font-weight:700;
+}
+.section {
+    margin-bottom: 2rem;           
+    padding: 1.5rem;               
+    background-color: #1a252f;    
+    border-radius: 8px;           
+    border-left: 5px solid #008000; 
+}
+.section:hover {
+    transform: scale(1.02); /* Majhen efekt ob premiku miške */
+}
+.section h2 {
+    color: #00ff00;               
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+}
+.section p {
+    color: #e0e0e0;                
+    line-height: 1.6;              
+    font-size: 1.1rem;
+    font-weight: 300;
+}

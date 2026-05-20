@@ -3,11 +3,13 @@ import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { filter } from 'rxjs/operators';
 import { EVCalculator } from "./ev-calculator/ev-calculator";
 import { BlackJackGame } from './black-jack-game/black-jack-game';
+import { Charts } from "./charts/charts";
+import { Info } from "./info/info";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [EVCalculator, BlackJackGame],
+  imports: [EVCalculator, BlackJackGame, Charts, Info],
   templateUrl: './app.html',
   styleUrl: './app.css'
   

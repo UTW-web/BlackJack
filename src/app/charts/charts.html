@@ -1,0 +1,94 @@
+@if (active_chart_screen === 'menu') {
+    <main>
+        <h1 class="Title">EDGE 21</h1>
+
+        <div id="basic-strategy" class="Box" (click)="selectChart('basic')">
+            <h1 class="Title2">BASIC STRATEGY</h1>
+            <img src="basic/basic.jpeg" width="95%">
+        </div>
+        <div id ="enhc-basic-strategy" class="Box" (click)="selectChart('enhc')">
+            <h1 class="Title2">ENHC BASIC STRATEGY</h1>
+            <img src="enhc/enhc.jpeg" width="95%">
+        </div>
+        <div id="s17-deviations" class="Box" (click)="selectChart('S17')">
+            <h1 class="Title2">S17 DEVIATIONS</h1>
+            <img src="S17/S17.jpeg" width="95%">
+        </div>
+        <div id="h17-deviations" class="Box" (click)="selectChart('H17')">
+            <h1 class="Title2">H17 DEVIATIONS</h1>
+            <img src="H17/H17.jpeg" width="95%">
+        </div>
+    </main>
+}
+
+@if ( active_chart_screen === 'basic' ) {
+    <main>
+        <h1 class="Title3">BASIC STRATEGY</h1>
+        <p class="explain">
+            Basic Strategy is the first thing you need 
+            to know before you can start beating blackjack with card counting. 
+            Perfect Basic Strategy is what cuts the casinos' edge to a mere 0.5%, 
+            making it possible for you to gain an edge by counting cards.
+        </p>
+        <img src="basic/basic.jpeg" class="Chart">
+        <img src="basic/basic1.jpeg" class="Chart">
+        <img src="basic/basic2.jpeg" class="Chart">
+        <img src="basic/basic3.jpeg" class="Chart">
+        <h1 class="Insurance">INSURANCE OR EVEN MONEY: DONT TAKE</h1>
+    </main>
+}
+
+@if ( active_chart_screen === 'enhc' ) {
+    <main>
+        <h1 class="Title3">ENHC BASIC STRATEGY</h1>
+        <p class="explain">
+            Basic Strategy is the first thing you need 
+            to know before you can start beating blackjack with card counting. 
+            Perfect Basic Strategy is what cuts the casinos' edge to a mere 0.5%, 
+            making it possible for you to gain an edge by counting cards.
+        </p>
+        <img src="enhc/enhc.jpeg" class="Chart">
+        <img src="enhc/enhc1.jpeg" class="Chart">
+        <img src="enhc/enhc2.jpeg" class="Chart">
+        <img src="enhc/enhc3.jpeg" class="Chart">
+        <h1 class="Insurance">INSURANCE OR EVEN MONEY: DONT TAKE</h1>
+    </main>
+}
+
+@if ( active_chart_screen === 'S17' ) {
+    <main>
+        <h1 class="Title3">S17 DEVIATIONS</h1>
+        <p class="explain">
+            <span class="red">Red Numbers</span> indicate the index that the true count must meet to deviation from basic strategy<br>
+            <span span class="bold">+</span> after the index number indicates the deviation happens at that <span class="bold">true count and above</span><br>
+            <span span class="bold">-</span> after the index number indicates the deviation happens at the <span class="bold">true count and below</span><br>
+            <span span class="bold">0-</span> indicates the deviation happens at <span class="bold">any negative running count</span><br>
+            <span span class="bold">0+</span> indicates the deviation occurs at <span class="bold">any positive running count</span>
+        </p>
+        <img src="S17/S17.jpeg" class="Chart">
+        <img src="S17/S17_1.jpeg" class="Chart">
+        <img src="S17/S17_2.jpeg" class="Chart">
+        <img src="S17/S17_3.jpeg" class="Chart">
+        <h1 class="Insurance">INSURANCE OR EVEN MONEY: TAKE AT 3+</h1>
+    </main>
+}
+
+@if ( active_chart_screen === 'H17' ) {
+    <main>
+        <h1 class="Title3">H17 DEVIATIONS</h1>
+        <p class="explain">
+            <span class="red">Red Numbers</span> indicate the index that the true count must meet to deviation from basic strategy<br>
+            <span span class="bold">+</span> after the index number indicates the deviation happens at that <span class="bold">true count and above</span><br>
+            <span span class="bold">-</span> after the index number indicates the deviation happens at the <span class="bold">true count and below</span><br>
+            <span span class="bold">0-</span> indicates the deviation happens at <span class="bold">any negative running count</span><br>
+            <span span class="bold">0+</span> indicates the deviation occurs at <span class="bold">any positive running count</span>
+        </p>
+        <img src="H17/H17.jpeg" class="Chart">
+        <img src="H17/H17_1.jpeg" class="Chart">
+        <img src="H17/H17_2.jpeg" class="Chart">
+        <img src="H17/H17_3.jpeg" class="Chart">
+        <h1 class="Insurance">INSURANCE OR EVEN MONEY: TAKE AT 3+</h1>
+    </main>
+}
+
+

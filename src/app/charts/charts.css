@@ -1,0 +1,76 @@
+main {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:1rem;
+    background-color:#101820;
+    padding-bottom:2rem;
+    overflow-x: hidden;
+}
+.Box {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:20rem;
+    width:25rem;
+    background-color: green;
+    cursor:pointer;
+}
+.Title {
+    font-size:3rem;
+    padding-bottom:1rem;
+    font-family:math;
+
+}
+.Title2 {
+    font-weight: 600;
+    font-size:1.7rem;
+    margin-bottom:2rem;
+
+}
+.Title3 {
+    font-weight: 600;
+    font-size:1.7rem;
+    margin:1.5rem;
+    color:rgb(1, 49, 1);
+    background:green;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Insurance {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    font-weight:600;
+    padding:0.4rem;
+    width: 90%;
+    max-width: 35rem;
+}
+.explain {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    max-width: 35rem;
+    padding-bottom:1rem;
+    font-weight: 350;
+    font-size:0.9rem;
+}
+.Chart {
+    width: 90%;
+    max-width: 35rem;
+}
+.red {
+    color:red;
+}
+.bold {
+    font-weight:700;
+}

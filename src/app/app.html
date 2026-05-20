@@ -39,11 +39,13 @@
 @if (Active_screen === 'charts') {
   <main>
     <button (click)="Active_screen = 'main'" class="Back">Back</button>
+    <app-charts></app-charts>
   </main>
 }
 
 @if (Active_screen === 'info') {
   <main>
     <button (click)="Active_screen = 'main'" class="Back">Back</button>
+    <app-info></app-info>
   </main>
 }
