@@ -54,9 +54,9 @@ count() {
   // Deck Penetration
   let DPEN = Number(DPEN_g?.value) || 10;
   // Deck penetration decimal
-  let DPEN_D = (100 - DPEN) / 100;
+  let DPEN_D = (DPEN / 100) * 0.001;
   // table penalty
-  let tablePenalty = D17 + ((NOD - 1) * 0.00015) 
+  let tablePenalty = D17 + ((NOD - 1) * 0.00015) + DPEN_D;
   for (let i: number=0; i<=7; i++) {
     const InputElement = ArrayCount[i] as HTMLInputElement
     let bet:number=Number(InputElement?.value)|| 0;
@@ -81,7 +81,7 @@ count() {
   // hourly variance
   let HV:number=VPH_EQ_SUM*HPH;
 
-  this.EVPH=EV_EQ_SUM*HPH * (DPEN_D * DPEN_D);
+  this.EVPH=EV_EQ_SUM*HPH;
   this.TEV=this.EVPH*HP;
 
   this.ROR=100;
