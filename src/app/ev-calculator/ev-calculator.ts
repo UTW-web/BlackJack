@@ -59,7 +59,7 @@ count() {
   let tablePenalty = D17 + ((NOD - 1) * 0.00015) + DPEN_D;
   for (let i: number=0; i<=7; i++) {
     const InputElement = ArrayCount[i] as HTMLInputElement
-    let bet:number=Number(InputElement?.value)|| 0;
+    let bet=Number(InputElement?.value)|| 0;
     let edge= Data[i].edge - tablePenalty;
     let frequency= Data[i].frequency;
     let ev_equation=bet*edge*frequency;

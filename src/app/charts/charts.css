@@ -8,27 +8,28 @@ main {
     background-color:#101820;
     padding-bottom:2rem;
     overflow-x: hidden;
+    padding-top:3rem;
 }
 .Box {
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    height:20rem;
-    width:25rem;
+    width: clamp(15rem, 90vw, 22rem);
+    height: clamp(12rem, 72vw, 17rem);
     background-color: green;
     cursor:pointer;
 }
 .Title {
-    font-size:3rem;
+    font-size: clamp(2rem, 30vw, 3rem);
     padding-bottom:1rem;
     font-family:math;
 
 }
 .Title2 {
     font-weight: 600;
-    font-size:1.7rem;
     margin-bottom:2rem;
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
 
 }
 .Title3 {
@@ -54,10 +55,6 @@ main {
     max-width: 35rem;
 }
 .explain {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     width: 90%;
     max-width: 35rem;
     padding-bottom:1rem;
@@ -65,7 +62,7 @@ main {
     font-size:0.9rem;
 }
 .Chart {
-    width: 90%;
+    width: 95%;
     max-width: 35rem;
 }
 .red {
@@ -73,4 +70,19 @@ main {
 }
 .bold {
     font-weight:700;
+}
+.Back {
+    background-color: #2d5a5a;
+    border-radius:0.2rem;
+    cursor:pointer;
+    padding:0.4rem;
+    font-size:1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display:flex;
+    justify-content: flex-start;
+    position:fixed;
+}
+.Back:hover {
+    background-color: #3a7575;
+    transform: translateY(-2px);
 }
