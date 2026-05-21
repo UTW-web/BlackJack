@@ -1,1 +1,71 @@
+@if (active_screen === 'rules' ) {
+<main>
+    <div class="Box">
+        <button class="Play-Btn" (click)="StartGame('game')">Start</button>
+        <h1 class="Settings">Settings</h1>
+        <div class="Box1">
+            <p>Betting</p>
+        <label class="switch right">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="Box1">
+        <p>Number of Decks</p>
 
+    </div>
+    <div class="Box1">
+        <p>Dealer Hits Soft 17</p>
+        <label class="switch right">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="Box1">
+        <p>Can Double After Split</p>
+        <label class="switch right">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="Box1">
+        <p>Doubling Available</p>
+    </div>
+    <div class="Box1">
+        <p>Resplitting Aces</p>
+        <label class="switch right">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="Box1">
+        <p>Surrender</p>
+        <label class="switch right">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    </div>
+    
+</main>
+
+}
+@if (active_screen === 'game' ) {
+<main>
+    <div class="dealer">
+
+    </div>
+
+    <div class="player">
+    <div class="decision">
+        <button (click)="engine()" id="hit" class="buttons-player btn-hit">HIT</button>
+        <button (click)="engine()" id="stand" class="buttons-player btn-stand">STD</button>
+        <button (click)="engine()" id="double" class="buttons-player btn-double">DBL</button>
+            <button (click)="engine()" id="split" class="buttons-player btn-split">SPL</button>
+            <button (click)="engine()" id="surrender" class="buttons-player btn-surr">SUR</button>
+            <button (click)="engine()" id="insurance" class="buttons-player btn-insurance">INS</button>
+        </div>
+    </div>
+</main>
+}
